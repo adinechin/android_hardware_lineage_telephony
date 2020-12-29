@@ -534,4 +534,81 @@ public class LineageExtTelephony extends IExtTelephony.Stub {
         return null;
     }
 
+    /**
+    * Get value assigned to vendor property
+    * @param - property name
+    * @param - default value of property
+    * @return - integer value assigned
+    */
+    @Override
+    public int getPropertyValueInt(String property, int def){
+        return 0;
+    }
+
+    /**
+    * Get value assigned to vendor property
+    * @param - property name
+    * @param - default value of property
+    * @return - boolean value assigned
+    */
+    @Override
+    public boolean getPropertyValueBool(String property, boolean def){
+        return false;
+    }
+
+    /**
+    * Get value assigned to vendor property
+    * @param - property name
+    * @param - default value of property
+    * @return - string value assigned
+    */
+    @Override
+    public String getPropertyValueString(String property, String def){
+        return null;
+    }
+    
+    /**
+    * To query endc status on a given slotId.
+    * @param - slotId
+    * @param - client registered with packagename to receive
+    *         callbacks.
+    * @return Integer Token to be used to compare with the response.
+    */
+    public Token queryEndcStatus(int slotId, Client client){
+        return null;
+    }
+
+     /**
+    * Enable/disable endc on a given slotId.
+    * @param - slotId
+    * @param - enabled
+    *        true - to enable endc
+    *        false - to disable endc
+    *  @param - client registered with packagename to receive
+    *         callbacks.
+    * @return Integer Token to be used to compare with the response.
+    */
+    @Override
+    public Token enableEndc(int slotId, boolean enable, Client client){
+        return null;
+    }
+
+    // Async api
+    @Override
+    public Token queryUpperLayerIndInfo(int slotId, Client client){
+        return null;
+    }
+
+    // Async api
+    @Override
+    public Token query5gConfigInfo(int slotId, Client client){
+        return null;
+    }
+
+    // Async api
+    @Override
+    public Token queryNrIconType(int slotId, Client client){
+        return null;
+    }
+
 }
